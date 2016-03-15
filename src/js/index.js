@@ -8,12 +8,6 @@ import { inputTemplate, selectTemplate, textAreaTemplate } from './templates';
 
 var $form = $('form');
 
-// var htmlForm = formInfo.map(function(anInput){
-// 	anInput = inputTemplate(anInput);
-// 	return anInput;
-// });
-
-
 
 var htmlForm = formInfo.map(function(anInput){
 
@@ -29,8 +23,6 @@ var htmlForm = formInfo.map(function(anInput){
 	}
 	
 });
-
-// $form.append(htmlForm.join(''));
 
 $form.prepend(htmlForm.join(''));
 

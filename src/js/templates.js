@@ -35,12 +35,3 @@ export function selectTemplate (inputElement){
 					</select>
 			</div>`
 };
-
-// return `<div>
-// 				<label for="${inputElement.id}">Select language...
-// 					<select type="${inputElement.type}" id="${inputElement.id}" placeholder="${inputElement.label}">
-// 		  				${optionsCreator}
-// 					</select>
-// 				</label>
-// 			</div>`
-// };
