@@ -1,1 +1,79 @@
 /* CSS Entry Point */
+
+@import "normalize";
+
+$blue: #2886CF;
+
+
+body{
+	margin:0;
+	padding: 0;
+}
+
+.form-wrapper{
+	width: 800px;
+	margin: auto;
+	border: 1px solid grey;
+	font-family: helvetica, sans-serif;
+	header{
+		background-color: $blue;
+		color: white;
+		padding: 25px;
+		margin-bottom: 40px;
+		h1{
+			margin: 0;
+		}
+	}
+	main{
+		
+		form div{
+			border: 1px solid #D1D1D1;
+			padding: 15px;
+			margin: 20px;
+			input{
+				height: 40px;
+				width: 550px;
+				margin-left: 20px;
+				border: none;
+			}label{
+				color: darken(#D1D1D1, 40%);
+			}
+			i{
+				margin-right: 8px;
+			}
+			.textarea{
+				width: 100%;
+				
+			}
+			textarea#user-comment{
+					width: 550px;
+					margin-left: 20px;
+					border: none;
+					height: 100px;
+					vertical-align: top;
+				}
+			select{
+				width: 100%;
+				height: 40px;
+				border: none;
+				background: white;
+			}
+		}
+	}
+	footer{
+		background-color: lighten($blue, 30%);
+		padding: 25px;
+		margin-top: 40px;
+		button{
+			background-color: $blue;
+			color: white;
+			border: none;
+			padding: 10px 15px 10px 15px;
+			border-radius: 3%;
+			&:hover{
+				background-color: darken($blue, 20%);
+			}
+		}
+	}
+}
+
